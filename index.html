@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+  .bgimg {
+    background-image: url('1.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+  }
+
+  .topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+  }
+
+  .bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+  }
+
+  .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  hr {
+    margin: auto;
+    width: 40%;
+  }
+
+</style>
+</head>
+<body>
+  <div class="bgimg">
+
+    <div class="middle">
+      <h1>:)</h1>
+      <hr>
+      <p>2022-06-01</p>
+    </div>
+    <div class="bottomleft">
+      <p>Text ME : Mohammad@gmail.com</p>
+    </div>
+
+    <script>
+    let name = 1;
+    showSlides();
+    function showSlides() {
+      let i;
+      let name = document.getElementsByClassName("bgimg");
+      
+
+      setTimeout(showSlides, 1000); // Change image every 2 seconds
+    }
+    </script>
+  </div>
+</body>
+</html>
